@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { postQuestion } from '../services/api'
 
 const useChat = () => {
-  const [answer, setAnswer] = useState('')
+  const [messages, setMessages] = useState<string[][]>([])
   const [error, setError] = useState('')
   const [loading, setLoading] = useState<boolean>(false)
 
@@ -12,7 +12,9 @@ const useChat = () => {
     postQuestion({ message: question })
       .then((result) => {
         if (result === null) return
-        setAnswer(result.answer)
+        setMessages([
+          ...messages, [question, result.answer]
+        ])
         setLoading(false)
       }).catch(() => {
         setError('Something went wrong')
@@ -21,7 +23,7 @@ const useChat = () => {
   }
 
   return {
-    answer,
+    messages,
     error,
     loading,
     addQuestion
