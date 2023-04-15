@@ -1,5 +1,6 @@
 import { useRef, useEffect } from 'react'
 import MessageContainer from './MessageContainer'
+import InitialMessage from './InitialMessage'
 
 interface Props {
   messages: string[][]
@@ -15,7 +16,7 @@ const MessagesContainer = ({ messages }: Props) => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  if (messages.length === 0) return <></>
+  if (messages.length === 0) return <InitialMessage />
 
   return (
     <div className="flex flex-col gap-3 mb-5 overflow-y-auto h-[60vh]">
