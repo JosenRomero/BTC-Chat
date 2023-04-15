@@ -66,6 +66,10 @@ h1 {
   40% { box-shadow: 0 2.5em 0 0 }
 }
 
+.stroke-text-blue {
+  text-shadow: -1px -1px 0 rgb(30 64 175),1px -1px 0 rgb(30 64 175),-1px 1px 0 rgb(30 64 175),1px 1px 0 rgb(30 64 175);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
