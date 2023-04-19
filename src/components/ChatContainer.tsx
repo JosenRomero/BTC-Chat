@@ -3,6 +3,7 @@ import Header from './Header'
 import Spinner from './Spinner'
 import QuestionInput from './QuestionInput'
 import MessagesContainer from './MessagesContainer'
+import Footer from './Footer'
 
 const ChatContainer = () => {
   const { messages, error, loading, addQuestion } = useChat()
@@ -14,6 +15,7 @@ const ChatContainer = () => {
       <Spinner loading={loading} />
       <MessagesContainer messages={messages} />
       <QuestionInput addQuestion={addQuestion} />
+      <Footer />
     </>
   )
 }
