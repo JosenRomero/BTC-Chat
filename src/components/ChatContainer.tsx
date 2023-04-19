@@ -1,4 +1,5 @@
 import useChat from '../hooks/useChat'
+import Header from './Header'
 import Spinner from './Spinner'
 import QuestionInput from './QuestionInput'
 import MessagesContainer from './MessagesContainer'
@@ -8,7 +9,7 @@ const ChatContainer = () => {
 
   return (
     <>
-      <h1 className="mb-5 stroke-text-blue text-xl md:text-3xl text-white">BTC Chat</h1>
+      <Header />
       { error !== '' && <div className="flex justify-center my-5 text-red-500">{error}</div> }
       <Spinner loading={loading} />
       <MessagesContainer messages={messages} />
