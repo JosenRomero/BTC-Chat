@@ -1,6 +1,6 @@
 # BTC-Chat
 
-A virtual assistant designed to help you understand everything about Bitcoin.
+A chatbot designed to help you understand everything about Bitcoin.
 
 ## Built with
 
