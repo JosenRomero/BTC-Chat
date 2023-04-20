@@ -20,10 +20,10 @@ backend (private repository, at the moment)
 
 ## Features
 
-[x] Q&A interfaces
-[x] Support gpt-3.5-turbo
-[-] Data stored locally
-[-] Night/Dark mode
+- [x] Q&A interfaces
+- [x] Support gpt-3.5-turbo
+- [ ] Data stored locally
+- [ ] Night/Dark mode
 
 ## 🎉 Deploy on Render
 
