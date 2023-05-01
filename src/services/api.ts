@@ -1,11 +1,8 @@
+import { type Question } from '../types'
 
 const apiURL: string = import.meta.env.VITE_API_URL
 
-interface question {
-  message: string
-}
-
-export const postQuestion = async (question: question) => {
+export const postQuestion = async (question: Question) => {
   return await fetch(`${apiURL}/api/chat`, {
     method: 'POST',
     body: JSON.stringify(question),
