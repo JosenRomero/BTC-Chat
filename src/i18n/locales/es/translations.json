@@ -1,3 +1,6 @@
 {
-  "initialMessage": "¡Hola! Soy un chatbot diseñado para ayudarte a entender todo sobre Bitcoin. Si tienes preguntas sobre cómo funciona Bitcoin, cómo almacenarlo de forma segura o cualquier otra cosa relacionada con Bitcoin, ¡pregúntame! Estoy aquí para ayudarte en lo que necesites."
+  "initialMessage": "¡Hola! Soy un chatbot diseñado para ayudarte a entender todo sobre Bitcoin. Si tienes preguntas sobre cómo funciona Bitcoin, cómo almacenarlo de forma segura o cualquier otra cosa relacionada con Bitcoin, ¡pregúntame! Estoy aquí para ayudarte en lo que necesites.",
+  "addAQuestion": "Agregue una pregunta",
+  "send": "Enviar",
+  "footerText": "Desarrollado por"
 }
